@@ -128,8 +128,9 @@ svg {
     stroke: white;
     fill: goldenrod;
 }
-
-
+.dropdown{
+    display: none;
+}
 /* Checkbox and hamburger icon */
 #toggle {
     position: absolute;
@@ -140,15 +141,17 @@ svg {
     padding: 1rem;
     /* Add position */
     opacity: 0;
+    z-index: 5;
 }
-#toggle:checked ~ nav:after{
-    display: none;
+#toggle:checked ~ .dropdown{
+    display: flex;
 }
 
 .hamburger-icon {
     position: absolute;
     right: 19px;
     top: 20px;
+    z-index: 4;
     /* Add position */
 }
 
@@ -156,7 +159,6 @@ svg {
     height: 40px;
     width: 40px;
 }
-
 
 /* Button styling */
 .button {
@@ -175,6 +177,7 @@ svg {
 .button--primary {
     background: var(--primary-color);
     border-color: var(--primary-color);
+    z-index: 1;
 }
 
 
@@ -188,6 +191,7 @@ nav {
     background-color: var(--primary-color);
     font-size: 2rem;
     text-align: center;
+    z-index: 1;
     /* Add flexbox */
 }
 nav a:hover{
