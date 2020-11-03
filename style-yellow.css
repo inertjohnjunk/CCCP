@@ -165,6 +165,9 @@ svg {
     text-transform: uppercase;
 }
 
+.button:hover{
+    color: gold;
+}
 .button--primary {
     background: var(--primary-color);
     border-color: var(--primary-color);
@@ -183,7 +186,9 @@ nav {
     text-align: center;
     /* Add flexbox */
 }
-
+nav a:hover{
+    color: gold;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
