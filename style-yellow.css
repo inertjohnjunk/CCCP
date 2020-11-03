@@ -139,6 +139,10 @@ svg {
     width: 50px;
     padding: 1rem;
     /* Add position */
+    opacity: 0;
+}
+#toggle:checked ~ nav:after{
+    display: none;
 }
 
 .hamburger-icon {
